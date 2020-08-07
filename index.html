@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lato&family=Nothing+You+Could+Do&display=swap"
+        rel="stylesheet">
+    <title>cafe</title>
+</head>
+
+
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #fff;
+            color: #555;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+        }
+         
+         h2{
+             letter-spacing: 2px;
+         }
+         
+         h1{
+             /* margin: auto; */
+             margin-left: 170px;
+             padding: 0;
+             color: #111;
+             font-size: 2em;
+         }
+         h1 span{
+             display: table-cell;
+             margin: 0;
+             padding: 0;
+             animation: animate 2s linear infinite;
+            font-weight: bolder;
+
+         }
+         h1 span:nth-child(1)
+         {
+             animation-delay: 0s;
+         }
+         h1 span:nth-child(2)
+         {
+             animation-delay: 0.25s;
+         }
+         h1 span:nth-child(3)
+         {
+             animation-delay: 0.5s;
+         }
+         h1 span:nth-child(4)
+         {
+             animation-delay: 0.75s;
+         }
+         h1 span:nth-child(5)
+         {
+             animation-delay: 1s;
+         }
+         h1 span:nth-child(6)
+         {
+             animation-delay: 1.25s;
+         }
+         h1 span:nth-child(7)
+         {
+             animation-delay: 1.5s;
+         }
+         h1 span:nth-child(8)
+         {
+             animation-delay: 1.75s;
+         }
+         h1 span:nth-child(9)
+         {
+             animation-delay: 2s;
+         }
+         h1 span:nth-child(10)
+         {
+             animation-delay: 2.25s;
+         }
+
+         @keyframes animate{
+             0%,100%
+             {
+                 color:rgb(243, 10, 10);
+                 /* color: rgb(11, 236, 29); */
+                 filter: blur(0px);
+                 text-shadow: 0 0 10px #00b3ff,
+                             0 0 20px #00b3ff,
+                             0 0 40px #00b3ff,
+                             0 0 80px #00b3ff,
+                             0 0 120px #00b3ff,
+                             0 0 200px #00b3ff,
+                             0 0 300px #00b3ff,
+                             0 0 400px #00b3ff,
+             }
+             5%,95%
+             {
+                 color: rgb(11, 236, 29);
+                 /* color: #fff; */
+                 filter: blur(0px);
+                 text-shadow: 0 0 10px none;
+             }
+         }
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)), url('cafe.jpg');
+            background-attachment: fixed;
+            max-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            font-family: 'Nothing You Could Do', cursive;
+            /* text-align: center; */
+            /* vertical-align: middle; */
+        }
+
+        .hero-text-box {
+            /* background-color: red; */
+            transform: translate(0%, 20%);
+            text-align: center;
+            font-size: 130%;
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+        }
+
+        .second {
+            font-size: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            /* padding: 30px 5px; */
+            /* padding-right: 20px; */
+            margin-top: 30px;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .btn-full {
+            background-color: #2c3e50;
+            transition: background-color 0.3s;
+        }
+
+        .btn-ghost {
+            background-color: transparent;
+            border: 2px solid wheat;
+            transition: color 0.5s;
+        }
+
+        body {
+            /* overflow: hidden; */
+            clear: both;
+        }
+        .btn-full:hover{
+            background-color: transparent;
+            border: 2px solid wheat;
+        }
+        .btn-ghost:hover{
+            color: #008000;
+            /* font-weight: bold; */
+            /* border: none; */
+        }
+
+
+
+
+        /* tis is the section for navigation */
+
+        .logo {
+            /* margin-bottom: 40px; */
+            /* border: 2px solid red; */
+            margin-bottom: 10px;
+            background-color: rgba(165, 42, 42, 0.096);
+            position: absolute;
+            /* height: 190px; */
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 1000; 
+            /* background-color: red; */
+            
+        }
+
+        #name {
+            /* margin-bottom:30px; */
+            margin-left: 10px;
+            margin-top: 0px;
+            /* border: 2px solid red; */
+            vertical-align: top;
+            font-size: 64px;
+            padding: 0;
+            font-family: 'Nothing You Could Do', cursive;
+            font-weight: 500;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .logo-img {
+
+            height: 91px;
+            width: auto;
+            margin-top: -18px;
+            /* vertical-align: middle; */
+        }
+
+        .word {
+            display: inline-block;
+            /* background-color: teal; */
+            margin-left: 70px;
+            padding-top: 20px;
+            /* position: fixed; */
+
+        }
+
+        .navbar {
+            float: right;
+            margin-right: 70px;
+            
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 0px 40px;
+            font-size: 30px;
+            /* border-bottom: 2px solid red; */
+            /* background-color: #95a5a6; */
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            /* color: #2c3e50; */
+            color: #02213fa8; 
+        }
+        .navbar ul li a:hover{
+            color: #000000;
+            /* border-bottom: 2px solid wheat; */
+            border-bottom: 2px solid black;   
+        }
+        
+
+        /* this is the starting of header */
+
+        .head{
+            margin-top: 90px;
+        }
+        .container {
+            margin-top: 90px;
+            display: flex;
+            width: 100%;
+            /* height: 493px; */
+            /* border: 2px solid red; */
+        }
+
+        .item {
+            /* border: 2px solid red; */
+            width: 33.33%;
+            max-height: 55vh;
+            text-align: center;
+            /* vertical-align: bottom; */
+            transform-origin: 50% 50%;
+            /* transform: translate(0% -10%); */
+            transition: all 9s ease;
+        }
+
+
+        .item-names {
+            margin-top: 30px;
+        }
+
+        .item-names p {
+            margin-top: 5px;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 2px;
+        }
+        .item-names h3{
+            letter-spacing: 2px;
+            font-size: 150%;
+        }
+        /* .address h3{
+            font-family:'Lato', sans-serif ;
+        } */
+
+
+        /* section meals */
+        .meals {
+            height: 100vh;
+            margin-top: 70px;
+            /* background-color: blue; */
+            /* background-color: rgb(241, 230, 230); */
+            background-color: #f8f9fa;
+        }
+
+        .textbox {
+            width: 70%;
+            margin-left: 15%;
+            /* margin-right: 15%; */
+            text-align: center;
+
+        }
+
+        .textbox h3 {
+            text-transform: uppercase;
+            font-size: 60px;
+            font-weight: 300;
+            color: #000;
+            /* margin-top: 10px; */
+        }
+
+        .textbox p {
+            margin-top: 10px;
+            color: #000;
+            letter-spacing: 0px;
+            word-spacing: 2px;
+            /* line-height: 20px; */
+            
+        }
+
+        .item-list {
+            padding: 0 50px;
+            display: flex;
+        }
+
+        .col {
+            margin-top: 75px;
+            width: 50%;
+            height: 524px;
+            padding: 0 10px;
+
+            /* background-color: red; */
+            /* border: 2px solid red; */
+        }
+
+
+        .col-1 p {
+            float: right;
+        }
+
+        .rate {
+            width: 50%;
+            text-align: center;
+            /* float: left; */
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .col-2 p {
+            /* display: flex; */
+            float: right;
+        }
+
+
+
+
+
+
+        /* section images  */
+
+        .images {
+            margin-top: 80px;
+            height: 65vh;
+            /* border: 2px solid red; */
+            padding: 0 40px;
+
+
+        }
+
+        .row {
+            /* background-color: aqua; */
+            /* margin: 1px; */
+            width: 100%;
+            height: 50%;
+        }
+
+        .row-1 {
+            display: flex;
+        }
+
+        .row-2 {
+            display: flex;
+        }
+
+        .row-item {
+            width: 25%;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .row-item img {
+            transform: scale(1.14);
+            opacity: 0.5;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+
+        .row-item img:hover {
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+
+
+
+        /* section for testimonials */
+
+        .testi{
+            margin-top: 99px;
+            height: 95vh;
+            /* border: 2px solid red; */
+            background-image: url('cup.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            /* align-items: bottom; */
+            
+            justify-content: center;
+
+            padding-right: 15%;
+
+        }
+        .texts{
+            /* color:#fff; */
+            color: #fff;
+            /* border: 2px solid red; */
+            width: 400px;
+            height: 500px;
+            /* margin-left: 10%; */
+            text-align: center;
+            
+        }
+        h4{
+            margin-top: 90px;
+            font-size: 40px;
+        }
+        .texts p{
+            margin-top: 40px;
+            
+        }
+
+
+
+        * {box-sizing:border-box}    
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+        /* section for table reservations */
+
+
+        .table{
+            height: 135vh;
+            background-color: #f8f9fa;
+            /* background-color: black; */
+            background-image: url('https://media3.picsearch.com/is?6JH3DtTaTSShzqAX8dhEwwUokXOjC5u1hbViQLiNx9s&height=191');
+            background-size: cover;
+            background-position: center;
+        }
+        .logoimg{
+        align-items: center;
+        text-align: center;
+        }
+
+        .logoimg img{
+            margin-top: 10%;
+            height: 10%;
+            width: 10%;
+            opacity: 2;
+        }
+
+        .img-text{
+            width: 50%;
+            margin: 4% auto;
+        }
+        .img-text p{
+          text-align: center;
+        }
+        .img-text h2{
+            margin-top: 9%;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        .form{
+            text-align: left;
+            /* border: 2px solid red; */
+            width: 40%;
+            height: 50%;
+            margin: auto;
+            color: blue;
+            font-size: 30px;
+        }
+
+        .names{
+            margin-top: 20px;
+        }
+        #date{
+            border: 2px solid black;
+            margin-top: 6px;
+            width: 100%;
+            height: 45px;
+        }
+        #time{
+            border: 2px solid black;
+            margin-top: 6px;
+            width: 100%;
+            height: 45px;
+        }
+        #number{
+            border: 2px solid black;
+            margin-top: 6px;
+            width: 100%;
+            height: 45px;
+        }
+        #but{
+            display: block;
+            margin-top: 23px;
+            width: 20%;
+            height: 8%;
+            border: 2px solid black;
+            background-color: #2c3e50;
+            color: #fff;
+            border-radius: 4px;
+        }
+        #but:hover{
+            background-color: transparent;
+            color: #000;
+        }
+        .content{
+            margin-top: 36px;
+        }
+
+
+
+
+        #nav_toggle {
+            display: none;
+        }
+
+        .navigation_button {
+            height: 3rem;
+            width: 3rem;
+            position: fixed;
+            top: 0.5rem;
+            right: 1rem;
+            border-radius: 50%;
+            z-index: 1300;
+            background-color: green;
+            /* box-shadow: 12px 10px 15px rgb(192, 183, 183), -10px -10px 11px #ffffff73; */
+            /* color: #000; */
+            /* align-items: baseline; */
+            text-align: center;
+        }
+
+        .navigation_background {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            position: fixed;
+            top: 1rem;
+            right: 1.5rem;
+            background-image: radial-gradient(red, blue);
+            z-index: 1000;
+            /* transform: scale(50); */
+            transition: transform .1s;
+        }
+
+        .navigation_nav {
+            height: 100vh;
+            width: 0%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1200;
+            /* opacity: 0; */
+            /* transition: all 0s; */
+            display: none;
+
+
+        }
+
+        .navigation_list {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+            /* width: 100%; */
+
+        }
+
+        .navigation_item {
+            margin: 3rem;
+        }
+
+        .navigation_link {
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+            background-size: 200%;
+        }
+
+        /* .navigation_item:visited{
+            margin: 1rem;
+        } */
+        .navigation_link {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+            background-size: 230%;
+            transition: all 0.4s;
+        }
+
+        .navigation_link:hover {
+            background-position: 100%;
+            color: green;
+            transform: translate(1rem);
+            border-radius: 10px;
+        }
+
+        .navigation_link:active {
+            background-position: 100%;
+            color: green;
+            transform: translate(1rem);
+        }
+
+
+
+        #nav_toggle:checked~.navigation_background {
+            transform: scale(80);
+        }
+
+        #nav_toggle:checked~.navigation_nav {
+            opacity: 1;
+            width: 100%;
+            display: block;
+
+
+        }
+    </style>
+
+
+
+    <div class="logo">
+        <div class="logo-img word">
+            <img src="logo.png" alt="">
+        </div>
+        <p class="word" id="name">cafe</p>
+
+        <nav class="navbar word">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="head">
+        <div class="navigation">
+            <input type="checkbox" name="navigation_checkbox" id="nav_toggle">
+            <label for="nav_toggle" class="navigation_button">menu</label>
+            <div class="navigation_background">&nbsp;</div>
+            <nav class="navigation_nav">
+                <ul class="navigation_list">
+                    <li class="navigation_item"><a href="https://www.facebook.com " target="_blank"
+                            class="navigation_link">home</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation_link">about us</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation_link">contact</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation_link">take a tour</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-text-box">
+            <h1>
+                <span>c</span>
+                <span>o</span>
+                <span>d</span>
+                <span>e</span>
+                <span>r</span>
+                <span>s</span>
+                <span>c</span>
+                <span>a</span>
+                <span>f</span>
+                <span>e</span>
+            </h1>
+            <h2 class="second">cafe that divines eye, coffee that defines soul</h2><br>
+            <a class="btn btn-full" href="http://www.facebook.com" target="_blank">book now</a>
+            <a class="btn btn-ghost" href="http://www.facebook.com">menu</a>
+
+
+        </div>
+        <div class="container">
+            <div class="item-1 item">
+                <div class="item-names">
+                    <h3>monday-friday</h3>
+                    <p>5 am-10 pm</p>
+                </div>
+                <div class="item-names">
+                    <h3>monday-friday</h3>
+                    <p>10-12</p>
+                </div>
+                <div class="item-names">
+                    <h3>monday-friday</h3>
+                    <p>10-12</p>
+                </div>
+            </div>
+            <div class="item-2 item">
+                <div class="item-names">
+                    <h3>cappuccino</h3>
+                    <p>special premium coffee</p>
+                    <p>$2.97</p>
+                </div>
+                <div class="item-names">
+                    <h3>deluxe burger</h3>
+                    <p>grass fed beef served with fries</p>
+                    <p>$7.0</p>
+                </div>
+                <div class="item-names">
+                    <h3>holleto</h3>
+                    <p>classic one</p>
+                    <p>$13.33</p>
+                </div>
+            </div>
+            <div class="item-3 item">
+                <div class="item-names address">
+                    <h3>adress: &mdash; kumaripati-lalitpur</h3>
+                    <p></p>
+                </div>
+                <div class="item-names address">
+                    <h3>contact: &mdash; (9088000000)</h3>
+                    <p></p>
+                </div>
+                <div class="item-names address">
+                    <h3>email: &mdash; chetanbudhathoki@gmail.com</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="meals">
+        <div class="textbox">
+            <h3>our main items</h3>
+            <p>we serve the best items in town. with the most glorious ingredients and in affordable price we bring you
+                a healthy and refreshing cofee and drinks </p>
+        </div>
+        <div class="item-list">
+            <div class="col-1 col">
+                <h3 class="rate">Cappuccino</h3>
+                <p class="rate">3.75$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Artisanal coffee</h3>
+                <p class="rate">5.0$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Cupcakes</h3>
+                <p class="rate">3.0$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Eggs benedict</h3>
+                <p class="rate">7.05$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Open faced sandwich</h3>
+                <p class="rate">11.99$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Red velvet cake</h3>
+                <p class="rate">13.0$</p>
+
+
+
+            </div>
+            <div class="col-2 col">
+
+                <h3 class="rate">Bribe and honey</h3>
+                <p class="rate">7.0$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Guittard chocolate milk</h3>
+                <p class="rate">3.50$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Ice tea</h3>
+                <p class="rate">3.50$</p><br><br>
+                <hr>
+
+                <h3 class="rate">coke/dietcoke</h3>
+                <p class="rate">2.50$</p><br><br>
+                <hr>
+
+                <h3 class="rate">homemade lemonade</h3>
+                <p class="rate">2.0$</p><br><br>
+                <hr>
+
+                <h3 class="rate">Orange Sparkling Pellegrino </h3>
+                <p class="rate">3.75$</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="images">
+        <div class="row-1 row">
+            <div class="row-item-1 row-item">
+                <img src="one.jpg" alt="">
+            </div>
+            <div class="row-item-2 row-item">
+                <img src="two.jpg" alt="">
+            </div>
+            <div class="row-item-3 row-item">
+                <img src="three.jpg" alt="">
+            </div>
+            <div class="row-item-4 row-item">
+                <img src="four.jpg" alt="">
+            </div>
+        </div>
+        <div class="row-2 row">
+            <div class="row-item-1 row-item">
+                <img src="five.jpg" alt="">
+            </div>
+            <div class="row-item-2 row-item">
+                <img src="six.jpg" alt="">
+            </div>
+            <div class="row-item-3 row-item">
+                <img src="seven.jpg" alt="">
+            </div>
+            <div class="row-item-4 row-item">
+                <img src="eight.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="testi">
+     <div class="texts">
+         <!-- <h4>Testimonials</h4>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quos natus placeat eaque explicabo, cumque error corporis est quia repellat asperiores eos odit nulla nisi recusandae qui excepturi rerum consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae sunt, distinctio quibusdam nam maxime voluptates iste soluta adipisci, quidem dolor. Obcaecati quisquam id repellendus, dolores iure neque ex numquam.</p><br>
+         <h5>tyor seig</h5> -->
+
+         <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <!-- <img src="img1.jpg" style="width:100%"> -->
+      <h4>Testimonials</h4>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quos natus placeat eaque explicabo, cumque error corporis est quia repellat asperiores eos odit nulla nisi recusandae qui excepturi rerum consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae sunt, distinctio quibusdam nam maxime voluptates iste soluta adipisci, quidem dolor. Obcaecati quisquam id repellendus, dolores iure neque ex numquam.</p><br>
+         <h5>tyor seig</h5>
+      <!-- <div class="text">Caption Text</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <!-- <img src="img2.jpg" style="width:100%"> -->
+      <h4>Testimonials</h4>
+         <p>Long long ago it was a summer time we went to coders cafe and we must say it was really a divine time spent over there</p><br>
+         <h5>tyor seig</h5>
+      <!-- <div class="text">Caption Two</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <!-- <img src="img3.jpg" style="width:100%"> -->
+      <h4>Testimonials</h4>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quos natus placeat eaque explicabo, cumque error corporis est quia repellat asperiores eos odit nulla nisi recusandae qui excepturi rerum consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae sunt, distinctio quibusdam nam maxime voluptates iste soluta adipisci, quidem dolor. Obcaecati quisquam id repellendus, dolores iure neque ex numquam.</p><br>
+         <h5>tyor seig</h5>
+      <!-- <div class="text">Caption Three</div> -->
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+     </div>
+    </section>
+
+    <section class="table">
+     <div class="logoimg">
+         <img src="https://media4.picsearch.com/is?mKxhsury6ryzh98lpKl6685Vh8O5yPkhyBIICfYP80w&height=341" alt="">
+     </div>
+     <div class="img-text">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat rerum odio eveniet eligendi, nemo vel autem sequi minus maxime id, in vitae tempora mollitia at ex molestiae saepe reiciendis dolor.</p>
+         <h2>table reservations</h2>
+     </div>
+     <div class="form">
+        
+            <p class="names">Date</p>
+            <input type="date" name="date" id="date">
+            <p class="names">Time</p>
+            <input type="time" name="time" id="time">
+            <p class="names">Number</p>
+            <input type="number" name="number" id="number">
+
+            <button id="but">Find Table</button>
+            <div class="content">
+                <div class="logo-img word">
+                    <img src="logo.png" alt="">
+                </div>
+                <p class="word" id="name">cafe</p>
+            </div>
+
+            
+         
+         
+     </div>
+    </section>
+
+</body>
+<script src="stile.js"></script>
+
+</html>
